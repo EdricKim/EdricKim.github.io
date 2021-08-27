@@ -13,3 +13,10 @@
 .othersTitle{
     text-align: center;
 }
+a{
+    text-decoration: none;
+}
+.nav-item{
+    list-style-type: none;
+    margin: 10px;
+}
