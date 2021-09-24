@@ -1,3 +1,24 @@
+@keyframes textFadeInLight{
+    from {
+        color: rgba(255, 255, 255, 0);
+    }
+    to {
+        color: rgba(255, 255, 255, 1);
+    }
+}
+@keyframes textFadeInDark{
+    from {
+        color: rgba(255, 255, 255, 0);
+    }
+    to {
+        color: rgba(0, 0, 0, 1);
+    }
+}
+@keyframes example {
+    from {top: -250px;}
+    to {top: 0px;}
+  }
+
 .homeTitle{
     text-align: center;
 }
@@ -19,4 +40,24 @@ a{
 .nav-item{
     list-style-type: none;
     margin: 10px;
+}
+.animated{
+    animation: example 2s ease;
+    position: relative;
+}
+.about-text{
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+}
+.text-animation-home{
+    color: transparent;
+    animation: textFadeInLight 3s 1.5s forwards;
+}
+.text-animation-about{
+    color: transparent;
+    animation: textFadeInDark 3s forwards;
+}
+.text-animation-about2{
+    color: transparent;
+    animation: textFadeInDark 3s 2s forwards;
 }
